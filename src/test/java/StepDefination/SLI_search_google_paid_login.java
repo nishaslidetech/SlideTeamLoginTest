@@ -93,7 +93,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
 			}
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (NoSuchElementException e) {
 
 		}
