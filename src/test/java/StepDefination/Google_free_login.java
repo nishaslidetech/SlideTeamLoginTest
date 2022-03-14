@@ -104,7 +104,7 @@ public class Google_free_login extends BaseClass {
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
 			}
-			Thread.sleep(4000);
+			Thread.sleep(5000);
 		} catch (NoSuchElementException e) {
 
 		}
