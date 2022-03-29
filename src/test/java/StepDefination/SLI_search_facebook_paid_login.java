@@ -95,7 +95,7 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 	public void user_selects_and_download_the_ppt() throws InterruptedException {
 		try {
 			WebElement select_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Project Management Powerpoint Presentation Slides']")));
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[2]/div[1]/a[1]/div[1]/img[1]")));
 			 select_ppt.click();
 			
 			 WebElement download_Ppt = wait
