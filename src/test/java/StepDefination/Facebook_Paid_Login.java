@@ -100,7 +100,7 @@ public class Facebook_Paid_Login extends BaseClass {
 		WebElement popular_PPt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Most Downloaded']")));
 		popular_PPt.click();
 		
-		WebElement select_PPt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Change Management Powerpoint Presentation Slides']")));
+		WebElement select_PPt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Change management powerpoint presentation slides']")));
 		js.executeScript("arguments[0].scrollIntoView();",  select_PPt);
 		 select_PPt.click();
 		
