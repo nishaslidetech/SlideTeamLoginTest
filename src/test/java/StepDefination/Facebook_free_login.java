@@ -50,7 +50,7 @@ public class Facebook_free_login extends BaseClass {
 
 		try {
 			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By
-					.xpath("//a[@title='3D Man Education And Technology Concept Free Ppt Templates Graphics Icons']")));
+					.xpath("//img[@title='3d man education and technology concept free ppt templates graphics icons']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 
