@@ -41,7 +41,7 @@ public class Normal_paid_login extends BaseClass {
 	public void user_try_to_download_the_ppt_vi() throws InterruptedException {
 		try {
 			WebElement select_Ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//a[@title='Business Process Evaluation Powerpoint Show']")));
+					.elementToBeClickable(By.xpath("//img[@title='Business process evaluation powerpoint show']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
 
