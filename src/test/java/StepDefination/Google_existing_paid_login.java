@@ -104,7 +104,7 @@ public class Google_existing_paid_login extends BaseClass {
 	@Then("user downloads the PPTiii$")
 	public void user_downloads_the_pptiii() throws InterruptedException {
 		Thread.sleep(9000);
-		//driver.get("https://www.slideteam.net/business-process-evaluation-powerpoint-show.html");
+		driver.get("https://www.slideteam.net/business-process-evaluation-powerpoint-show.html");
 		WebElement download_Ppt = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
 		js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
