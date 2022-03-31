@@ -39,7 +39,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 		try {
 			Thread.sleep(2000);
 			WebElement select_Ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//a[@title='Business Process Evaluation Powerpoint Show']")));
+					.elementToBeClickable(By.xpath("//img[@title='Business process evaluation powerpoint show']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
 
