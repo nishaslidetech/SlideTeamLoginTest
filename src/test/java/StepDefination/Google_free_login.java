@@ -52,7 +52,7 @@ public class Google_free_login extends BaseClass {
 		try {
 			Thread.sleep(2000);
 			WebElement select_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Diverging Process Arrow Chart 4 Steps Cycle Diagram Free PowerPoint Templates']")));
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates']")));
 			Thread.sleep(2000);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
