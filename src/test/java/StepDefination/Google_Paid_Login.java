@@ -101,7 +101,7 @@ public class Google_Paid_Login extends BaseClass {
 		popular_PPt.click();
 
 		WebElement select_PPt = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//img[@title='Change Management Powerpoint Presentation Slides']")));
+				.elementToBeClickable(By.xpath("//img[@title='Change management powerpoint presentation slides']")));
 		js.executeScript("arguments[0].scrollIntoView();", select_PPt);
 		select_PPt.click();
 
