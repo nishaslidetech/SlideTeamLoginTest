@@ -103,9 +103,9 @@ public class SLI_search_google_paid_login extends BaseClass {
 	public void user_verify_the_page_viii() {
 
 		// Verify the subscription page
-		String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']")))
+		/*String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']")))
 				.getText();
-		System.out.println("subscriptionText = " + subscriptionText);
+		System.out.println("subscriptionText = " + subscriptionText);*/
 
 		//Assert.assertTrue("user is not on the subscription page after login with facebbok paid credentials",subscriptionText.contains(TextMessage));
 	}
