@@ -107,7 +107,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 				.getText();
 		System.out.println("subscriptionText = " + subscriptionText);
 
-		//Assert.assertTrue("user is not on the subscription page after login with facebbok paid credentials",subscriptionText.contains(TextMessage));
+		Assert.assertTrue("user is not on the subscription page after login with facebbok paid credentials",subscriptionText.contains(TextMessage));
 	}
 
 	@Then("enter Keyword in search field_viii$")
