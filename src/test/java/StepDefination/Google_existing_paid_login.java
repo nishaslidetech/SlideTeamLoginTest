@@ -46,7 +46,7 @@ public class Google_existing_paid_login extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 		} catch (NoSuchElementException e) {
 
 		}
@@ -93,8 +93,7 @@ public class Google_existing_paid_login extends BaseClass {
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
 			}
-			  Thread.sleep(9000);
-			//Thread.sleep(9000);
+			  
 			
 		} catch (NoSuchElementException e) {
 
