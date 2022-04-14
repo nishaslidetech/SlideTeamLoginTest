@@ -60,7 +60,7 @@ public class Google_free_login extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
 			download_ppt.click();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (NoSuchElementException e) {
 
 		}
@@ -91,20 +91,20 @@ public class Google_free_login extends BaseClass {
 			next_1.click();
 			
 			
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			WebElement gmail_pass = wait.until(ExpectedConditions
 					.elementToBeClickable(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")));
 			gmail_pass.sendKeys("parulpahwa@11");
 
 			WebElement next_2 = driver.findElement(By.cssSelector("#passwordNext > div > button > span"));
 			next_2.click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
 			}
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 		} catch (NoSuchElementException e) {
 
 		}
