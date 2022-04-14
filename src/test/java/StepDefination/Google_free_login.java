@@ -94,7 +94,7 @@ public class Google_free_login extends BaseClass {
 			Thread.sleep(3000);
 			WebElement gmail_pass = wait.until(ExpectedConditions
 					.elementToBeClickable(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")));
-			gmail_pass.sendKeys("parulpahwa@11");
+			gmail_pass.sendKeys("parulpahwa@12");
 
 			WebElement next_2 = driver.findElement(By.cssSelector("#passwordNext > div > button > span"));
 			next_2.click();
