@@ -59,7 +59,7 @@ public class Google_Paid_Login extends BaseClass {
 			WebElement gmail_pass = wait.until(ExpectedConditions
 					.elementToBeClickable(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")));
 			Thread.sleep(2000);
-			gmail_pass.sendKeys("parulpahwa@11");
+			gmail_pass.sendKeys("parulpahwa@12");
 		
 
 			WebElement next_2 = driver.findElement(By.cssSelector("#passwordNext > div > button > span"));
