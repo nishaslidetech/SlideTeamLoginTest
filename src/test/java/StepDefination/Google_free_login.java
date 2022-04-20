@@ -57,7 +57,7 @@ public class Google_free_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 			WebElement download_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
 			download_ppt.click();
 			Thread.sleep(5000);
@@ -70,10 +70,10 @@ public class Google_free_login extends BaseClass {
 	public void user_is_on_home_page_page_and_click_on_google_buttoniiv() throws Throwable {
 		// Click on Sign in with Google Account
 		//Thread.sleep(3000);
-		WebElement Sign_in_with_google = wait.until(
-				ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Sign in with Google')]")));
-		Thread.sleep(2000);
-		Sign_in_with_google.click();
+		WebElement Sign_in_with_google = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-google social-btn']")));
+		 js.executeScript("arguments[0].click();", Sign_in_with_google);
+		Thread.sleep(3000);
 	}
 
 	@Then("user Enters the free username and passwordiiv$")
