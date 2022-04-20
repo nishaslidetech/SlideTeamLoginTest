@@ -44,14 +44,15 @@ public class Facebook_existing_paid_login extends BaseClass {
 			select_Ppt.click();
 
 			WebElement download_Ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
 			System.out.println("user is on Login page");
 			Thread.sleep(2000);
-			WebElement Sign_in_with_facebook = BaseClass.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']"));
-			Thread.sleep(1000);
-			Sign_in_with_facebook.click();
+			WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
+		        js.executeScript("arguments[0].click();", Sign_in_with_facebook);
+		        Thread.sleep(3000);
 			System.out.println("facebook button clicked");
 		} catch (NoSuchElementException e) {
 
