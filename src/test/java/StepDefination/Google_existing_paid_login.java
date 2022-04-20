@@ -43,7 +43,7 @@ public class Google_existing_paid_login extends BaseClass {
 			select_Ppt.click();
 
 			WebElement download_Ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
 			Thread.sleep(5000);
@@ -56,7 +56,7 @@ public class Google_existing_paid_login extends BaseClass {
 	public void user_is_on_login_page_and_click_on_sigin_with_google_buttoniii() throws InterruptedException {
 		// Click on Sign in with Google Account
 		Thread.sleep(2000);
-		WebElement Sign_in_with_google = BaseClass.elementToBeClickable(By.xpath("//a[contains(text(),'Sign in with Google')]"));
+		WebElement Sign_in_with_google = BaseClass.elementToBeClickable(By.xpath("//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-google social-btn']"));
 		Thread.sleep(1000);
 		Sign_in_with_google.click();
 
