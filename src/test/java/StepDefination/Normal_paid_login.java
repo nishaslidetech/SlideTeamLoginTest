@@ -45,11 +45,16 @@ public class Normal_paid_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
 
-			WebElement download_Ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
-			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
-			download_Ppt.click();
-			Thread.sleep(3000);
+			WebElement download_btn_pdp_fp = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
+		        js.executeScript("arguments[0].scrollIntoView();",download_btn_pdp_fp);	
+	                download_btn_pdp_fp.click();
+	                Thread.sleep(3000);
+	                WebElement registeredUsers = wait
+				.until(ExpectedConditions.elementToBeClickable(By.linkText("Registered Users")));
+	 
+	                js.executeScript("arguments[0].click();", registeredUsers);
+		        Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
 		}
