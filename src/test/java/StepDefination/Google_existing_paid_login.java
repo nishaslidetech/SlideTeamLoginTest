@@ -54,11 +54,17 @@ public class Google_existing_paid_login extends BaseClass {
 
 	@Then("user is on Login page and click on Signin with google buttoniii$")
 	public void user_is_on_login_page_and_click_on_sigin_with_google_buttoniii() throws InterruptedException {
-		// Click on Sign in with Google Account
-		Thread.sleep(2000);
+		// Click on Sign in with Google Account PDP Login Popup
+		/*Thread.sleep(2000);
 		WebElement Sign_in_with_google = BaseClass.elementToBeClickable(By.xpath("//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-google social-btn']"));
 		Thread.sleep(1000);
+		Sign_in_with_google.click();*/
+		
+		Thread.sleep(2000);
+		WebElement Sign_in_with_google = BaseClass.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-google social-btn']"));
+		Thread.sleep(1000);
 		Sign_in_with_google.click();
+		Thread.sleep(3000);
 
 	}
 
