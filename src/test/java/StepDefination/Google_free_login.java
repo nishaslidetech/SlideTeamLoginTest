@@ -68,10 +68,15 @@ public class Google_free_login extends BaseClass {
 
 	@Then("user is on home page page and click on google buttoniiv$")
 	public void user_is_on_home_page_page_and_click_on_google_buttoniiv() throws Throwable {
-		// Click on Sign in with Google Account
+		// Click on Sign in with Google Account PDP LOGIN POPUP
 		//Thread.sleep(3000);
-		WebElement Sign_in_with_google = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+		/*WebElement Sign_in_with_google = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-google social-btn']")));
+		 js.executeScript("arguments[0].click();", Sign_in_with_google);
+		Thread.sleep(3000);*/
+		
+		WebElement Sign_in_with_google = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//a[@class='btn btn-block btn-social btn-google social-btn']")));
 		 js.executeScript("arguments[0].click();", Sign_in_with_google);
 		Thread.sleep(3000);
 	}
