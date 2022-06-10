@@ -66,11 +66,18 @@ public class Facebook_free_login extends BaseClass {
 
 	@Then("user is on home page page and click on facebbook button_ii")
 	public void user_is_on_home_page_page_and_click_on_facebbook_button_ii() throws InterruptedException {
-		 Thread.sleep(2000);
+		//PDP Login Pop-up
+		/*Thread.sleep(2000);
 		WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
 		 js.executeScript("arguments[0].click();", Sign_in_with_facebook);
+		Thread.sleep(3000);*/
+		
+		Thread.sleep(2000);
+		WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']"));
+		 js.executeScript("arguments[0].click();", Sign_in_with_facebook);
 		Thread.sleep(3000);
+	
 	}
 
 	@Then("user enters the free username and password_ii")
