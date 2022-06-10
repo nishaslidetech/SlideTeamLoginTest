@@ -50,11 +50,11 @@ public class Normal_paid_login extends BaseClass {
 		        js.executeScript("arguments[0].scrollIntoView();",download_btn_pdp_fp);	
 	                download_btn_pdp_fp.click();
 	                Thread.sleep(3000);
-	                WebElement registeredUsers = wait
+	              /*  WebElement registeredUsers = wait
 				.until(ExpectedConditions.elementToBeClickable(By.linkText("Registered Users")));
 	 
 	                js.executeScript("arguments[0].click();", registeredUsers);
-		        Thread.sleep(2000);
+		        Thread.sleep(2000);*/
 		} catch (NoSuchElementException e) {
 
 		}
