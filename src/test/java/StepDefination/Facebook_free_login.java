@@ -74,7 +74,7 @@ public class Facebook_free_login extends BaseClass {
 		Thread.sleep(3000);*/
 		
 		Thread.sleep(2000);
-		WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']"));
+		WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
 		 js.executeScript("arguments[0].click();", Sign_in_with_facebook);
 		Thread.sleep(3000);
 	
