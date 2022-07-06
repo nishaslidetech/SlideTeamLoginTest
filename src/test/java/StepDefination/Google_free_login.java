@@ -106,13 +106,65 @@ public class Google_free_login extends BaseClass {
 
 			WebElement next_2 = driver.findElement(By.cssSelector("#passwordNext > div > button > span"));
 			next_2.click();
-			Thread.sleep(3000);
+			Thread.sleep(4000);
+
+			try {
+				WebElement download_ppt = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
+				js.executeScript("arguments[0].scrollIntoView();", download_ppt);
+				download_ppt.click();
+				Thread.sleep(2000);
+				if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
+					WebElement close_popup = wait.until(
+							ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='mfp-close roundlink']")));
+
+					close_popup.click();
+				}
+			} catch (NoSuchElementException e) {
+
+			}
+
+			// if session expire problem
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
 			}
-			Thread.sleep(8000);
+			Thread.sleep(5000);
+			try {
+				WebElement free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
+						By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
+				Actions action = new Actions(driver);
+				action.moveToElement(free_Stuff).perform();
+				WebElement free_ppt = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
+				action.moveToElement(free_ppt).click().perform();
+			} catch (NoSuchElementException e) {
+
+			}
+
+			try {
+				Thread.sleep(2000);
+				WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+						"//img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates']")));
+				Thread.sleep(2000);
+				js.executeScript("arguments[0].scrollIntoView();", select_ppt);
+				select_ppt.click();
+				WebElement download_ppt = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
+				js.executeScript("arguments[0].scrollIntoView();", download_ppt);
+				download_ppt.click();
+				Thread.sleep(5000);
+				if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
+					WebElement close_popup = wait.until(
+							ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='mfp-close roundlink']")));
+
+					close_popup.click();
+				}
+			} catch (NoSuchElementException e) {
+
+			}
+
 		} catch (NoSuchElementException e) {
 
 		}
@@ -120,26 +172,21 @@ public class Google_free_login extends BaseClass {
 
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {
-		try {
-			/*
-			 * driver.get(
-			 * "https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html"
-			 * );
-			 */
-			WebElement download_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
-			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
-			download_ppt.click();
-			Thread.sleep(2000);
-			if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
-				WebElement close_popup = wait
-						.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='mfp-close roundlink']")));
-
-				close_popup.click();
-			}
-		} catch (NoSuchElementException e) {
-
-		}
+		/*
+		 * try { WebElement download_ppt = wait
+		 * .until(ExpectedConditions.elementToBeClickable(By.xpath(
+		 * "//button[@id='clicking']")));
+		 * js.executeScript("arguments[0].scrollIntoView();", download_ppt);
+		 * download_ppt.click(); Thread.sleep(2000); if
+		 * (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty(
+		 * )) { WebElement close_popup = wait
+		 * .until(ExpectedConditions.elementToBeClickable(By.
+		 * xpath("//a[@class='mfp-close roundlink']")));
+		 * 
+		 * close_popup.click(); } } catch (NoSuchElementException e) {
+		 * 
+		 * }
+		 */
 	}
 
 	@Then("user clicks on the Logout pageiiv$")
