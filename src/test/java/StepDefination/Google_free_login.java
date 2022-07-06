@@ -121,8 +121,11 @@ public class Google_free_login extends BaseClass {
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {
 		try {
-			driver.get(
-					"https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html");
+			/*
+			 * driver.get(
+			 * "https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html"
+			 * );
+			 */
 			WebElement download_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
