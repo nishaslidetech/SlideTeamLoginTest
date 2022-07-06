@@ -1,22 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: Setupclass.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 67, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 417.588 s <<< FAILURE! - in Setupclass.TestRunner
-And user Enters the free username and passwordiiv(Scenario: Login with Google free account)  Time elapsed: 0.004 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id='identifierId'] (tried for 30 second(s) with 500 milliseconds interval)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //*[@id='identifierId']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SLIDEQA2', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: unknown
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 93.316 s <<< FAILURE! - in Setupclass.TestRunner
+Login with Google free account test.Login with Google free account  Time elapsed: 84.415 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f
+*** Element info: {Using=css selector, value=#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input}
 
-Scenario: Login with Google free account  Time elapsed: 0.004 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id='identifierId'] (tried for 30 second(s) with 500 milliseconds interval)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //*[@id='identifierId']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SLIDEQA2', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: unknown
+Login with Google free account test.Login with Google free account  Time elapsed: 84.416 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f
+
+Setupclass.TestRunner  Time elapsed: 86.609 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f
+	at Setupclass.TestRunner.afterClass(TestRunner.java:24)
 

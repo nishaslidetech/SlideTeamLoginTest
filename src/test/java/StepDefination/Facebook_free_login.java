@@ -10,8 +10,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -49,13 +49,13 @@ public class Facebook_free_login extends BaseClass {
 	public void user_try_to_download_the_free_ppts_ii() throws Throwable {
 
 		try {
-			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By
-					.xpath("//img[@title='3d man education and technology concept free ppt templates graphics icons']")));
+			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+					"//img[@title='3d man education and technology concept free ppt templates graphics icons']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 
-			WebElement download_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
+			WebElement download_ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
 			download_ppt.click();
 			Thread.sleep(3000);
@@ -66,18 +66,21 @@ public class Facebook_free_login extends BaseClass {
 
 	@Then("user is on home page page and click on facebbook button_ii")
 	public void user_is_on_home_page_page_and_click_on_facebbook_button_ii() throws InterruptedException {
-		//PDP Login Pop-up
-		/*Thread.sleep(2000);
-		WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
-		 js.executeScript("arguments[0].click();", Sign_in_with_facebook);
-		Thread.sleep(3000);*/
-		
+		// PDP Login Pop-up
+		/*
+		 * Thread.sleep(2000); WebElement Sign_in_with_facebook=
+		 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+		 * "//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-facebook social-btn']"
+		 * ))); js.executeScript("arguments[0].click();", Sign_in_with_facebook);
+		 * Thread.sleep(3000);
+		 */
+
 		Thread.sleep(2000);
-		WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
-		 js.executeScript("arguments[0].click();", Sign_in_with_facebook);
+		WebElement Sign_in_with_facebook = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
+		js.executeScript("arguments[0].click();", Sign_in_with_facebook);
 		Thread.sleep(3000);
-	
+
 	}
 
 	@Then("user enters the free username and password_ii")
@@ -106,13 +109,12 @@ public class Facebook_free_login extends BaseClass {
 		try {
 			if (!driver.findElements(By.xpath("//input[@value='Log In']")).isEmpty()) {
 				driver.findElement(By.xpath("//input[@value='Log In']")).click();
-			}
-			else {	
-			WebElement fb_login = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
-			
-			
-			fb_login.click();
-			Thread.sleep(3000);
+			} else {
+				WebElement fb_login = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
+
+				fb_login.click();
+				Thread.sleep(3000);
 			}
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
@@ -130,7 +132,7 @@ public class Facebook_free_login extends BaseClass {
 	public void user_downloads_the_free_ppt_ii() throws InterruptedException {
 		try {
 			Thread.sleep(2000);
-			//driver.get("https://www.slideteam.net/3d-man-education-and-technology-concept-ppt-graphics-icons.html");
+			// driver.get("https://www.slideteam.net/3d-man-education-and-technology-concept-ppt-graphics-icons.html");
 			WebElement download_ppt = BaseClass.elementToBeClickable(By.xpath("//button[@id='clicking']"));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
 			download_ppt.click();
@@ -160,7 +162,7 @@ public class Facebook_free_login extends BaseClass {
 		try {
 			Thread.sleep(2000);
 			WebElement sign_Out = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign Out")));
-			js.executeScript("arguments[0].click();",sign_Out);
+			js.executeScript("arguments[0].click();", sign_Out);
 		} catch (NoSuchElementException e) {
 
 		}
@@ -172,11 +174,9 @@ public class Facebook_free_login extends BaseClass {
 		String verifySignOutMessage = BaseClass.elementToBeClickable(By.xpath("//h3[@class='base']")).getText();
 
 		System.out.print("logout= " + verifySignOutMessage);
-		
+
 		Assert.assertTrue("user is not logout from the application",
 				verifySignOutMessage.contains(verifySignOutMessage));
-
-		
 
 	}
 

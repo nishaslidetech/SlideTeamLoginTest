@@ -9,8 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 
@@ -24,14 +24,14 @@ public class Google_Paid_Login extends BaseClass {
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			BaseClass.ClearBrowserCache();
 			// Click on Sign in with Google Account
-			
+
 			Thread.sleep(3000);
 			WebElement Sign_in_with_google = wait.until(
 					ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Sign in with Google')]")));
 			Sign_in_with_google.click();
-		
-				Thread.sleep(3000);
-			
+
+			Thread.sleep(3000);
+
 		} catch (InterruptedException e) {
 
 			e.printStackTrace();
@@ -44,11 +44,12 @@ public class Google_Paid_Login extends BaseClass {
 		try {
 
 			if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
-				WebElement another_btn = BaseClass.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
+				WebElement another_btn = BaseClass
+						.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
 				another_btn.click();
 			}
 			WebElement gmail_email = BaseClass.elementToBeClickable(By.xpath("//*[@id='identifierId']"));
-			
+
 			gmail_email.sendKeys("parul.pahwa@slidetech.in");
 			Thread.sleep(3000);
 			WebElement next_1 = driver.findElement(By.cssSelector("#identifierNext > div > button > span"));
@@ -60,12 +61,11 @@ public class Google_Paid_Login extends BaseClass {
 					.elementToBeClickable(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")));
 			Thread.sleep(2000);
 			gmail_pass.sendKeys("parulpahwa@12");
-		
 
 			WebElement next_2 = driver.findElement(By.cssSelector("#passwordNext > div > button > span"));
-			
+
 			next_2.click();
-			
+
 			Thread.sleep(2000);
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
@@ -83,11 +83,15 @@ public class Google_Paid_Login extends BaseClass {
 	public void user_clicks_on_login_button_and_verify_the_pagev() throws InterruptedException {
 
 		// Verify the subscription page
-		/*String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']")))
-				.getText();
-		System.out.println("subscriptionText = " + subscriptionText);*/
+		/*
+		 * String subscriptionText =
+		 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+		 * "//h3[@class='base']"))) .getText(); System.out.println("subscriptionText = "
+		 * + subscriptionText);
+		 */
 
-		//Assert.assertTrue("user is not on the subscription page after login with facebbok paid credentials",subscriptionText.contains(TextMessage));
+		// Assert.assertTrue("user is not on the subscription page after login with
+		// facebbok paid credentials",subscriptionText.contains(TextMessage));
 
 	}
 
@@ -100,8 +104,8 @@ public class Google_Paid_Login extends BaseClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Most Downloaded']")));
 		popular_PPt.click();
 
-		WebElement select_PPt = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
+		WebElement select_PPt = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
 		js.executeScript("arguments[0].scrollIntoView();", select_PPt);
 		select_PPt.click();
 
@@ -130,11 +134,9 @@ public class Google_Paid_Login extends BaseClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']"))).getText();
 
 		System.out.print("logout= " + verifySignOutMessage);
-		
+
 		Assert.assertTrue("user is not logout from the application",
 				verifySignOutMessage.contains(verifySignOutMessage));
-		
-		
-		
+
 	}
 }

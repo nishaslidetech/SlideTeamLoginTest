@@ -9,8 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -20,7 +20,7 @@ public class Google_existing_paid_login extends BaseClass {
 	@Given("User is home pageiii$")
 	public void user_is_home_pageiii() throws Throwable {
 		BaseClass.ClearGoggleCache();
-		
+
 		driver.get(AppURL);
 		driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
@@ -42,8 +42,8 @@ public class Google_existing_paid_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
 
-			WebElement download_Ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
+			WebElement download_Ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
 			Thread.sleep(5000);
@@ -55,13 +55,16 @@ public class Google_existing_paid_login extends BaseClass {
 	@Then("user is on Login page and click on Signin with google buttoniii$")
 	public void user_is_on_login_page_and_click_on_sigin_with_google_buttoniii() throws InterruptedException {
 		// Click on Sign in with Google Account PDP Login Popup
-		/*Thread.sleep(2000);
-		WebElement Sign_in_with_google = BaseClass.elementToBeClickable(By.xpath("//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-google social-btn']"));
-		Thread.sleep(1000);
-		Sign_in_with_google.click();*/
-		
+		/*
+		 * Thread.sleep(2000); WebElement Sign_in_with_google =
+		 * BaseClass.elementToBeClickable(By.
+		 * xpath("//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-google social-btn']"
+		 * )); Thread.sleep(1000); Sign_in_with_google.click();
+		 */
+
 		Thread.sleep(2000);
-		WebElement Sign_in_with_google = BaseClass.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-google social-btn']"));
+		WebElement Sign_in_with_google = BaseClass
+				.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-google social-btn']"));
 		Thread.sleep(1000);
 		Sign_in_with_google.click();
 		Thread.sleep(3000);
@@ -73,7 +76,8 @@ public class Google_existing_paid_login extends BaseClass {
 		try {
 
 			if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
-				WebElement another_btn = BaseClass.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
+				WebElement another_btn = BaseClass
+						.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
 				another_btn.click();
 			}
 
@@ -84,7 +88,7 @@ public class Google_existing_paid_login extends BaseClass {
 			WebElement next_1 = driver.findElement(By.cssSelector("#identifierNext > div > button > span"));
 
 			next_1.click();
-			
+
 			WebElement gmail_pass = wait.until(ExpectedConditions
 					.elementToBeClickable(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")));
 
@@ -99,8 +103,7 @@ public class Google_existing_paid_login extends BaseClass {
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
 			}
-			  
-			
+
 		} catch (NoSuchElementException e) {
 
 		}
@@ -138,13 +141,10 @@ public class Google_existing_paid_login extends BaseClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']"))).getText();
 
 		System.out.print("logout= " + verifySignOutMessage);
-		
+
 		Assert.assertTrue("user is not logout from the application",
 				verifySignOutMessage.contains(verifySignOutMessage));
 
-	
-
-		
 	}
 
 }

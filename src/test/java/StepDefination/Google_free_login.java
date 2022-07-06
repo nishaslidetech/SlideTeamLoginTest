@@ -10,8 +10,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -51,13 +51,13 @@ public class Google_free_login extends BaseClass {
 
 		try {
 			Thread.sleep(2000);
-			WebElement select_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates']")));
+			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+					"//img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates']")));
 			Thread.sleep(2000);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
-			WebElement download_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
+			WebElement download_ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
 			download_ppt.click();
 			Thread.sleep(5000);
@@ -69,15 +69,18 @@ public class Google_free_login extends BaseClass {
 	@Then("user is on home page page and click on google buttoniiv$")
 	public void user_is_on_home_page_page_and_click_on_google_buttoniiv() throws Throwable {
 		// Click on Sign in with Google Account PDP LOGIN POPUP
-		//Thread.sleep(3000);
-		/*WebElement Sign_in_with_google = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-google social-btn']")));
-		 js.executeScript("arguments[0].click();", Sign_in_with_google);
-		Thread.sleep(3000);*/
-		
-		WebElement Sign_in_with_google = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//a[@class='btn btn-block btn-social btn-google social-btn']")));
-		 js.executeScript("arguments[0].click();", Sign_in_with_google);
+		// Thread.sleep(3000);
+		/*
+		 * WebElement Sign_in_with_google =
+		 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+		 * "//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-google social-btn']"
+		 * ))); js.executeScript("arguments[0].click();", Sign_in_with_google);
+		 * Thread.sleep(3000);
+		 */
+
+		WebElement Sign_in_with_google = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-google social-btn']")));
+		js.executeScript("arguments[0].click();", Sign_in_with_google);
 		Thread.sleep(3000);
 	}
 
@@ -86,20 +89,20 @@ public class Google_free_login extends BaseClass {
 		try {
 
 			if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
-				WebElement another_btn = BaseClass.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
+				WebElement another_btn = BaseClass
+						.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
 				another_btn.click();
 			}
 
 			WebElement gmail_email = BaseClass.elementToBeClickable(By.xpath("//*[@id='identifierId']"));
-			gmail_email.sendKeys("parul.pahwa@slidetech.in");
+			gmail_email.sendKeys("nishadhiman0027@gmail.com");
 			WebElement next_1 = driver.findElement(By.cssSelector("#identifierNext > div > button > span"));
 			next_1.click();
-			
-			
+
 			Thread.sleep(3000);
 			WebElement gmail_pass = wait.until(ExpectedConditions
 					.elementToBeClickable(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")));
-			gmail_pass.sendKeys("parulpahwa@12");
+			gmail_pass.sendKeys("Qwerty@1");
 
 			WebElement next_2 = driver.findElement(By.cssSelector("#passwordNext > div > button > span"));
 			next_2.click();
@@ -118,7 +121,8 @@ public class Google_free_login extends BaseClass {
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {
 		try {
-			driver.get("https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html");
+			driver.get(
+					"https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html");
 			WebElement download_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
@@ -154,12 +158,9 @@ public class Google_free_login extends BaseClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']"))).getText();
 
 		System.out.print("logout= " + verifySignOutMessage);
-		
+
 		Assert.assertTrue("user is not logout from the application",
 				verifySignOutMessage.contains(verifySignOutMessage));
 
-		
-	
-		
 	}
 }

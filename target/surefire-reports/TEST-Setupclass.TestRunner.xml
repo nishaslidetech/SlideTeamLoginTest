@@ -1,154 +1,314 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Setupclass.TestRunner" time="417.588" tests="67" errors="2" skipped="3" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Setupclass.TestRunner" time="93.316" tests="3" errors="3" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
-    <property name="java.vm.version" value="25.291-b10"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\SLIDE QA\eclipse-workspace\SlideteamLogin"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="US"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Selenium Live Projects\SlideTeamLoginTest\target\test-classes;D:\Selenium Live Projects\SlideTeamLoginTest\target\classes;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SLIDE QA\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\SLIDE QA\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\SLIDE QA\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\SLIDE QA\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\SLIDE QA\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\SLIDE QA\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\SLIDE QA\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-java\6.10.2\cucumber-java-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-junit\6.10.2\cucumber-junit-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\SLIDE QA\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\SLIDE QA\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.0\maven-compiler-plugin-3.8.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\SLIDE QA\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\SLIDE QA\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\SLIDE QA\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\SLIDE QA\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.0\webdrivermanager-5.1.0.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\SLIDE QA\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\SLIDE QA\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\SLIDE QA\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\SLIDE QA\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\SLIDE QA\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\slf4j-simple\1.7.25\slf4j-simple-1.7.25.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\SLIDE QA\eclipse-workspace\SlideteamLogin"/>
-    <property name="java.runtime.version" value="1.8.0_291-b10"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\SLIDEQ~1\AppData\Local\Temp\"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\SLIDE QA\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire15059464900890685911\surefirebooter4807827810255388155.jar C:\Users\SLIDE QA\AppData\Local\Temp\surefire15059464900890685911 2022-07-06T15-30-27_790-jvmRun1 surefire17958280997519083856tmp surefire_017882178836871775087tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Selenium Live Projects\SlideTeamLoginTest\target\test-classes;D:\Selenium Live Projects\SlideTeamLoginTest\target\classes;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SLIDE QA\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\SLIDE QA\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\SLIDE QA\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\SLIDE QA\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\SLIDE QA\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\SLIDE QA\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\SLIDE QA\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-java\6.10.2\cucumber-java-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-junit\6.10.2\cucumber-junit-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\SLIDE QA\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\SLIDE QA\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.0\maven-compiler-plugin-3.8.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\SLIDE QA\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\SLIDE QA\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\SLIDE QA\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\SLIDE QA\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.0\webdrivermanager-5.1.0.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\SLIDE QA\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\SLIDE QA\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\SLIDE QA\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\SLIDE QA\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\SLIDE QA\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\slf4j-simple\1.7.25\slf4j-simple-1.7.25.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\SLIDE QA"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-09-14"/>
+    <property name="java.home" value="C:\Users\SLIDE QA\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Selenium Live Projects\SlideTeamLoginTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\SLIDE QA\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf15013555816307030488.tmp"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin/server;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.8.3\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\Git\cmd;C:\Users\SLIDE QA\AppData\Local\Microsoft\WindowsApps;;C:\Users\SLIDE QA\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
+    <property name="surefire.real.class.path" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire15059464900890685911\surefirebooter4807827810255388155.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\SLIDE QA"/>
-    <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.runtime.version" value="17+35"/>
     <property name="user.name" value="SLIDE QA"/>
-    <property name="java.class.path" value="C:\Users\SLIDE QA\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.0.20210618-2246\jars\plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_291\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17+35"/>
+    <property name="localRepository" value="C:\Users\SLIDE QA\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\SLIDEQ~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17"/>
+    <property name="user.dir" value="D:\Selenium Live Projects\SlideTeamLoginTest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\SLIDE QA\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin/server;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.8.3\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\SLIDE QA\AppData\Local\Microsoft\WindowsApps;;C:\Users\SLIDE QA\Desktop;;."/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_291"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\SLIDE QA\eclipse-workspace\SlideteamLogin\EMBEDDED"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17+35"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Given User is home pagei" classname="Scenario: Login with existing facebook paid account test" time="0.002"/>
-  <testcase name="Then user clicks on the Popular PPTsi" classname="Scenario: Login with existing facebook paid account test" time="0"/>
-  <testcase name="Then User try to Download the ppti" classname="Scenario: Login with existing facebook paid account test" time="0"/>
-  <testcase name="Then user is on Login pagei" classname="Scenario: Login with existing facebook paid account test" time="0"/>
-  <testcase name="And user Enters the username and passwordi" classname="Scenario: Login with existing facebook paid account test" time="0"/>
-  <testcase name="Then user clicks on Login buttoni" classname="Scenario: Login with existing facebook paid account test" time="0"/>
-  <testcase name="Then user downloads the PPTi" classname="Scenario: Login with existing facebook paid account test" time="0"/>
-  <testcase name="Then user clicks on the Logout pagei" classname="Scenario: Login with existing facebook paid account test" time="0"/>
-  <testcase name="Then verify the Signout Messagei" classname="Scenario: Login with existing facebook paid account test" time="0"/>
-  <testcase name="Scenario: Login with existing facebook paid account test" classname="Scenario: Login with existing facebook paid account test" time="0.001"/>
-  <testcase name="Given User is home page_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="Then user click on the Free PPts under free stuff_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="Then User try to download the free ppts_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="Then user is on home page page and click on facebbook button_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="And user enters the free username and password_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="Then user clicks on Login button_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="Then user downloads the free PPT_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="Then user clicks on the logout page_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="Then verify The Message_ii" classname="Scenario: Login with facebook free account" time="0"/>
-  <testcase name="Scenario: Login with facebook free account" classname="Scenario: Login with facebook free account" time="0.001"/>
-  <testcase name="Given User is home pageiii" classname="Scenario: Login with Google existing paid account" time="0"/>
-  <testcase name="Then user click on the Popular PPTsiii" classname="Scenario: Login with Google existing paid account" time="0"/>
-  <testcase name="Then User try to download the pptiii" classname="Scenario: Login with Google existing paid account" time="0"/>
-  <testcase name="Then user is on Login page and click on Signin with google buttoniii" classname="Scenario: Login with Google existing paid account" time="0"/>
-  <testcase name="And user enters the username and passwordiii" classname="Scenario: Login with Google existing paid account" time="0"/>
-  <testcase name="Then user downloads the PPTiii" classname="Scenario: Login with Google existing paid account" time="0"/>
-  <testcase name="Then user clicks on the Logout pageiii" classname="Scenario: Login with Google existing paid account" time="0"/>
-  <testcase name="Then verify the messageiii" classname="Scenario: Login with Google existing paid account" time="0"/>
-  <testcase name="Scenario: Login with Google existing paid account" classname="Scenario: Login with Google existing paid account" time="0.001"/>
-  <testcase name="Given User is home pageiiv" classname="Scenario: Login with Google free account" time="0"/>
-  <testcase name="Then user click on the Free PPts under free stuffiiv" classname="Scenario: Login with Google free account" time="0"/>
-  <testcase name="Then User try to download the free pptsiiv" classname="Scenario: Login with Google free account" time="0"/>
-  <testcase name="Then user is on home page page and click on google buttoniiv" classname="Scenario: Login with Google free account" time="0"/>
-  <testcase name="And user Enters the free username and passwordiiv" classname="Scenario: Login with Google free account" time="0.004">
-    <error message="Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=&apos;identifierId&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id='identifierId'] (tried for 30 second(s) with 500 milliseconds interval)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //*[@id='identifierId']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SLIDEQA2', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: unknown
-</error>
+  <testcase name="Login with Google free account" classname="Login with Google free account test" time="84.415">
+    <error message="Failed to decode response from marionette&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.43.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f&#10;*** Element info: {Using=css selector, value=#password &gt; div.aCsJod.oJeWuf &gt; div &gt; div.Xb9hP &gt; input}" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f
+*** Element info: {Using=css selector, value=#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input}
+]]></error>
+    <system-out><![CDATA[Bname=====https://www.slideteam.net/
+
+@Google_Free_login
+Scenario: Login with Google free account                       &amp#27;[90m# src/test/java/Features/Google_free_login.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is home pageiiv&amp#27;[0m                                   &amp#27;[90m# StepDefination.Google_free_login.user_is_home_pageiiv()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser click on the Free PPts under free stuffiiv&amp#27;[0m         &amp#27;[90m# StepDefination.Google_free_login.user_click_on_the_free_p_pts_under_free_stuffiiv()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser try to download the free pptsiiv&amp#27;[0m                   &amp#27;[90m# StepDefination.Google_free_login.user_try_to_download_the_free_pptsiiv()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser is on home page page and click on google buttoniiv&amp#27;[0m &amp#27;[90m# StepDefination.Google_free_login.user_is_on_home_page_page_and_click_on_google_buttoniiv()&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31muser Enters the free username and passwordiiv&amp#27;[0m            &amp#27;[90m# StepDefination.Google_free_login.user_Enters_the_free_username_and_passwordiiv()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f
+*** Element info: {Using=css selector, value=#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at StepDefination.Google_free_login.user_Enters_the_free_username_and_passwordiiv(Google_free_login.java:103)
+	at âœ½.user Enters the free username and passwordiiv(file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_free_login.feature:9)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser downloads the free PPTiiv&amp#27;[0m                          &amp#27;[90m# StepDefination.Google_free_login.user_downloads_the_free_pptiiv()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser clicks on the Logout pageiiv&amp#27;[0m                       &amp#27;[90m# StepDefination.Google_free_login.user_clicks_on_the_logout_pageiiv()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mverify the messageiiv&amp#27;[0m                                   &amp#27;[90m# StepDefination.Google_free_login.verify_the_messageiiv()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at StepDefination.TakeImageStep.tearDown(TakeImageStep.java:21)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/Facebook_existing_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_existing_paid_login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/Facebook_free_login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/Facebook_paid_Login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_paid_Login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/Google_existing_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_existing_paid_login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/Google_free_login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_free_login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/Google_paid_Login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_paid_Login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/Normal_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Normal_paid_login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/SLI_search_facebook_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+Jul 06, 2022 3:30:33 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./target/test-classes/Features/SLI_search_google_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/SLI_search_google_paid_login.feature
+
+This typically happens when you configure cucumber to look for features in the root of your project.
+Your build tool creates a copy of these features in a 'target' or 'build'directory.
+
+If your features are on the class path consider using a class path URI.
+For example: 'classpath:com/example/app.feature'
+Otherwise you'll have to provide a more specific location
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://api.github.com/repos/mozilla/geckodriver/releases to seek geckodriver
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\SLIDE QA\.cache\selenium\geckodriver\win64\0.31.0\geckodriver.exe
+1657101636026	geckodriver	INFO	Listening on 127.0.0.1:15725
+1657101636235	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\SLIDEQ~1\\AppData\\Local\\Temp\\rust_mozprofile5FvhmV"
+1657101636518	Marionette	INFO	Marionette enabled
+1657101636524	Marionette	INFO	Listening on port 64449
+Read port: 64449
+1657101636626	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SLIDEQ~1\\AppData\\Local\\Temp\\rust_mozprofile5FvhmV\\search.json.mozlz4", (void 0)))
+Jul 06, 2022 3:30:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1#inbox line 2 > eval line 3363 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin#inbox line 2 > eval line 3194 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+log4j:WARN No appenders could be found for logger (org.junit.BeforeClass).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.slideteam.net"
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 1: TypeError: require.config is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 1: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 3: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: ReferenceError: requirejs is not defined
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: ReferenceError: requirejs is not defined
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: ReferenceError: requirejs is not defined
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 1: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: TypeError: require is not a function
+JavaScript error: https://www.slideteam.net/free-download-diverging-process-arrow-chart-4-steps-cycle-diagram-powerpoint-slides.html line 1 > injectedScript, line 2: ReferenceError: requirejs is not defined
+JavaScript error: https://www.slideteam.net/static/version1657081210/frontend/Slideteam/default/en_US/Magento_Theme/js/ddimgtooltip.min.js, line 21: ReferenceError: jQuery is not defined
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.slideteam.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.slideteam.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.slideteam.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/o/oauth2/auth?client_id=336207352953-vmd5a9eu70o8mcgelcffhq0u42514iih.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.slideteam.net%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth.done%3DGoogle&response_type=code&scope=profile+email&access_type=offline line 2 > eval line 4356 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/o/oauth2/auth?client_id=336207352953-vmd5a9eu70o8mcgelcffhq0u42514iih.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.slideteam.net%2Fsociallogin%2Fsocial%2Fcallback%2F%3Fhauth.done%3DGoogle&response_type=code&scope=profile+email&access_type=offline line 2 > eval line 77 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1657101723150	Marionette	INFO	Stopped listening on port 64449
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+]]></system-err>
   </testcase>
-  <testcase name="Scenario: Login with Google free account" classname="Scenario: Login with Google free account" time="0.004">
-    <error message="Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=&apos;identifierId&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id='identifierId'] (tried for 30 second(s) with 500 milliseconds interval)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //*[@id='identifierId']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SLIDEQA2', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: unknown
-</error>
+  <testcase name="Login with Google free account" classname="Login with Google free account test" time="84.416">
+    <error message="Tried to run command without establishing a connection&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.43.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f
+]]></error>
   </testcase>
-  <testcase name="Then user downloads the free PPTiiv" classname="Scenario: Login with Google free account" time="0">
-    <skipped/>
+  <testcase name="" classname="Setupclass.TestRunner" time="86.609">
+    <error message="Tried to run command without establishing a connection&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SLIDEQA2&apos;, ip: &apos;192.168.43.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15064, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb3218f6-4cc3-4113-9446-212c72d4988f
+	at Setupclass.TestRunner.afterClass(TestRunner.java:24)
+]]></error>
+    <system-err><![CDATA[&amp#27;[32m&amp#27;[1m┌───────────────────────────────────────────────────────────────────────────────────┐&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Share your Cucumber Report with your team at &amp#27;[36m&amp#27;[1m&amp#27;[4mhttps://reports.cucumber.io&amp#27;[0m          &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Activate publishing with one of the following:                                    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/cucumber.properties:          &amp#27;[36mcucumber.publish.enabled&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/junit-platform.properties:    &amp#27;[36mcucumber.publish.enabled&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Environment variable:                            &amp#27;[36mCUCUMBER_PUBLISH_ENABLED&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m JUnit:                                           &amp#27;[36m@CucumberOptions&amp#27;[0m(publish = &amp#27;[36mtrue&amp#27;[0m) &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m More information at &amp#27;[36mhttps://reports.cucumber.io/docs/cucumber-jvm&amp#27;[0m                 &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Disable this message with one of the following:                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/cucumber.properties:          &amp#27;[36mcucumber.publish.quiet&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m      &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/junit-platform.properties:    &amp#27;[36mcucumber.publish.quiet&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m      &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m└───────────────────────────────────────────────────────────────────────────────────┘&amp#27;[0m
+]]></system-err>
   </testcase>
-  <testcase name="Then user clicks on the Logout pageiiv" classname="Scenario: Login with Google free account" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Then verify the messageiiv" classname="Scenario: Login with Google free account" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Given User is home page_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="Then user click on the Popular PPTs_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="Then User try to download the ppt_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="Then user is on Login page_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="And user enters the username and password_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="Then user clicks on Login button_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="Then user downloads the PPT_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="Then user clicks on the Logout page_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="Then verify the message_vi" classname="Scenario: Login with normal paid account" time="0"/>
-  <testcase name="Scenario: Login with normal paid account" classname="Scenario: Login with normal paid account" time="0.001"/>
-  <testcase name="Given User is home page_vii" classname="Scenario: SLI search facebook login test" time="0"/>
-  <testcase name="Then user will clicks on the sign in with Facebook button_vii" classname="Scenario: SLI search facebook login test" time="0"/>
-  <testcase name="And user enters the username and password_vii" classname="Scenario: SLI search facebook login test" time="0"/>
-  <testcase name="Then user verify the page after login_vii" classname="Scenario: SLI search facebook login test" time="0"/>
-  <testcase name="Then enter keyword in search field_vii" classname="Scenario: SLI search facebook login test" time="0"/>
-  <testcase name="Then user selects and download the PPT_vii" classname="Scenario: SLI search facebook login test" time="0"/>
-  <testcase name="Then user clicks on the Logout page_vii" classname="Scenario: SLI search facebook login test" time="0"/>
-  <testcase name="Then verify the message_vii" classname="Scenario: SLI search facebook login test" time="0"/>
-  <testcase name="Scenario: SLI search facebook login test" classname="Scenario: SLI search facebook login test" time="0.001"/>
-  <testcase name="Given User is home page_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="Then Enter keyword in search field_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="Then user will clicks on the sign in with Google button_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="And user enters the username and password_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="Then user verify the page_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="Then enter Keyword in search field_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="Then user selects and download the PPT_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="Then user clicks on the Logout page_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="Then verify the message_viii" classname="Scenario: SLI search Google login test" time="0"/>
-  <testcase name="Scenario: SLI search Google login test" classname="Scenario: SLI search Google login test" time="0.001"/>
 </testsuite>

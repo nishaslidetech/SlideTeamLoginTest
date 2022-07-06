@@ -9,16 +9,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class SLI_search_facebook_paid_login extends BaseClass {
 
 	@Given("User is home page_vii$")
-	
+
 	public void user_is_home_page_vii() throws Throwable {
 		BaseClass.ClearfacebookCache();
-		
+
 		driver.get(AppURL);
 		log.info("It's opening the website URL");
 		Thread.sleep(2000);
@@ -47,7 +47,7 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 			WebElement fb_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
 
 			fb_pass.sendKeys("redhat2090");
-                        Thread.sleep(2000);
+			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
 		}
@@ -55,18 +55,17 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 
 	@Then("user verify the page after login_vii$")
 	public void user_verify_the_page_after_login_vii() throws Throwable {
-		
+
 		try {
 			if (!driver.findElements(By.xpath("//input[@value='Log In']")).isEmpty()) {
 				driver.findElement(By.xpath("//input[@value='Log In']")).click();
+			} else {
+				WebElement fb_login = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
+
+				fb_login.click();
+
 			}
-				else {
-			WebElement fb_login = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
-			
-			
-			fb_login.click();
-			
-				}
 			Thread.sleep(2000);
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
@@ -80,7 +79,8 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 		String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']")))
 				.getText();
 		System.out.println("subscriptionText = " + subscriptionText);
-		//Assert.assertTrue("user is not on the subscription page after login with facebook paid credentials",subscriptionText.contains(TextMessage));
+		// Assert.assertTrue("user is not on the subscription page after login with
+		// facebook paid credentials",subscriptionText.contains(TextMessage));
 	}
 
 	@Then("enter keyword in search field_vii$")
@@ -96,15 +96,15 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 		try {
 			WebElement select_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[2]/div[1]/a[1]/div[1]/img[1]")));
-			 select_ppt.click();
-			
-			 WebElement download_Ppt = wait
-						.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
-				js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
-				download_Ppt.click();
-				Thread.sleep(3000);
+			select_ppt.click();
+
+			WebElement download_Ppt = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
+			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
+			download_Ppt.click();
+			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
-			
+
 		}
 	}
 
@@ -128,11 +128,10 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']"))).getText();
 
 		System.out.print("logout= " + verifySignOutMessage);
-		
+
 		Assert.assertTrue("user is not logout from the application",
 				verifySignOutMessage.contains(verifySignOutMessage));
-		
-		
+
 	}
 
 }

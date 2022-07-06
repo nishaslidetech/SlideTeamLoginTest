@@ -9,8 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -45,16 +45,19 @@ public class Normal_paid_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
 
-			WebElement download_btn_pdp_fp = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
-		        js.executeScript("arguments[0].scrollIntoView();",download_btn_pdp_fp);	
-	                download_btn_pdp_fp.click();
-	                Thread.sleep(3000);
-	              /*  WebElement registeredUsers = wait
-				.until(ExpectedConditions.elementToBeClickable(By.linkText("Registered Users")));
-	 
-	                js.executeScript("arguments[0].click();", registeredUsers);
-		        Thread.sleep(2000);*/
+			WebElement download_btn_pdp_fp = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
+			js.executeScript("arguments[0].scrollIntoView();", download_btn_pdp_fp);
+			download_btn_pdp_fp.click();
+			Thread.sleep(3000);
+			/*
+			 * WebElement registeredUsers = wait
+			 * .until(ExpectedConditions.elementToBeClickable(By.linkText("Registered Users"
+			 * )));
+			 * 
+			 * js.executeScript("arguments[0].click();", registeredUsers);
+			 * Thread.sleep(2000);
+			 */
 		} catch (NoSuchElementException e) {
 
 		}
@@ -106,7 +109,7 @@ public class Normal_paid_login extends BaseClass {
 
 		WebElement download_Ppt = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
-		//js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
+		// js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 		download_Ppt.click();
 		if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
 			WebElement close_popup = wait
@@ -114,7 +117,7 @@ public class Normal_paid_login extends BaseClass {
 
 			close_popup.click();
 		}
-			
+
 	}
 
 	@Then("user clicks on the Logout page_vi$")
@@ -135,7 +138,7 @@ public class Normal_paid_login extends BaseClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']"))).getText();
 
 		System.out.print("logout= " + verifySignOutMessage);
-		
+
 		Assert.assertTrue("user is not logout from the application",
 				verifySignOutMessage.contains(verifySignOutMessage));
 	}

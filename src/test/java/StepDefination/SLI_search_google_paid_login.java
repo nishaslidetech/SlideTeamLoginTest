@@ -1,6 +1,5 @@
 package StepDefination;
 
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -13,8 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -22,7 +21,7 @@ import cucumber.api.java.en.Then;
 public class SLI_search_google_paid_login extends BaseClass {
 	@Given("User is home page_viii$")
 	public void user_is_home_page_viii() throws Throwable {
-		
+
 		BaseClass.ClearGoggleCache();
 		driver.get(AppURL);
 		log.info("It's opening the website URL");
@@ -46,7 +45,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 			boolean pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']")).isDisplayed();
 			System.out.println("pop-up is displayed  " + pop_up_Value);
 
-			//assertTrue(pop_up_Value == false);
+			// assertTrue(pop_up_Value == false);
 		} catch (AWTException e) {
 		}
 
@@ -57,8 +56,8 @@ public class SLI_search_google_paid_login extends BaseClass {
 		// Click on Sign in with Google Account
 		WebElement Sign_in_with_google = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Sign in with Google')]")));
-		js.executeScript("arguments[0].click();",Sign_in_with_google);
-		//Sign_in_with_google.click();
+		js.executeScript("arguments[0].click();", Sign_in_with_google);
+		// Sign_in_with_google.click();
 	}
 
 	@Then("user enters the username and password_viii$")
@@ -67,7 +66,8 @@ public class SLI_search_google_paid_login extends BaseClass {
 			Thread.sleep(3000);
 
 			if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
-				WebElement another_btn =BaseClass.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
+				WebElement another_btn = BaseClass
+						.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
 				another_btn.click();
 			}
 			Thread.sleep(2000);
@@ -78,7 +78,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 			WebElement next_1 = driver.findElement(By.cssSelector("#identifierNext > div > button > span"));
 
 			next_1.click();
-                        Thread.sleep(8000);
+			Thread.sleep(8000);
 			WebElement gmail_pass = wait.until(ExpectedConditions
 					.elementToBeClickable(By.cssSelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input")));
 
@@ -103,11 +103,15 @@ public class SLI_search_google_paid_login extends BaseClass {
 	public void user_verify_the_page_viii() {
 
 		// Verify the subscription page
-		/*String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']")))
-				.getText();
-		System.out.println("subscriptionText = " + subscriptionText);*/
+		/*
+		 * String subscriptionText =
+		 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+		 * "//h3[@class='base']"))) .getText(); System.out.println("subscriptionText = "
+		 * + subscriptionText);
+		 */
 
-		//Assert.assertTrue("user is not on the subscription page after login with facebbok paid credentials",subscriptionText.contains(TextMessage));
+		// Assert.assertTrue("user is not on the subscription page after login with
+		// facebbok paid credentials",subscriptionText.contains(TextMessage));
 	}
 
 	@Then("enter Keyword in search field_viii$")
@@ -122,8 +126,8 @@ public class SLI_search_google_paid_login extends BaseClass {
 	@Then("user selects and download the PPT_viii$")
 	public void user_selects_and_download_the_ppt_viii() throws Throwable {
 		Thread.sleep(2000);
-		WebElement select_ppt = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[2]/div[1]/a[1]/div[1]/img[1]")));
+		WebElement select_ppt = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[2]/div[1]/a[1]/div[1]/img[1]")));
 		select_ppt.click();
 		Thread.sleep(2000);
 		WebElement download_Ppt = wait
@@ -151,10 +155,10 @@ public class SLI_search_google_paid_login extends BaseClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']"))).getText();
 
 		System.out.print("logout= " + verifySignOutMessage);
-		
+
 		Assert.assertTrue("user is not logout from the application",
 				verifySignOutMessage.contains(verifySignOutMessage));
-		
+
 	}
 
 }

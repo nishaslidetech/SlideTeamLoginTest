@@ -9,8 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -43,25 +43,27 @@ public class Facebook_existing_paid_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
 
-			WebElement download_Ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
+			WebElement download_Ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
 			System.out.println("user is on Login page");
 			Thread.sleep(2000);
-			
-			//PDP Login popup
-			/*WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
-		        js.executeScript("arguments[0].click();", Sign_in_with_facebook);
-		        Thread.sleep(3000);
-			System.out.println("facebook button clicked");*/
-			
-			WebElement Sign_in_with_facebook= wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
-		        js.executeScript("arguments[0].click();", Sign_in_with_facebook);
-		        Thread.sleep(3000);
-			
+
+			// PDP Login popup
+			/*
+			 * WebElement Sign_in_with_facebook=
+			 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+			 * "//div[@class = 'social-buttons']//a[@class='btn btn-block btn-social btn-facebook social-btn']"
+			 * ))); js.executeScript("arguments[0].click();", Sign_in_with_facebook);
+			 * Thread.sleep(3000); System.out.println("facebook button clicked");
+			 */
+
+			WebElement Sign_in_with_facebook = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
+			js.executeScript("arguments[0].click();", Sign_in_with_facebook);
+			Thread.sleep(3000);
+
 		} catch (NoSuchElementException e) {
 
 		}
@@ -77,17 +79,17 @@ public class Facebook_existing_paid_login extends BaseClass {
 	public void user_Enters_the_username_and_passwordi() throws Throwable {
 
 		try {
-			
+
 			Thread.sleep(2000);
 			WebElement fb_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 
 			fb_email.clear();
-			
+
 			fb_email.sendKeys("sumit.kumar@slidetech.in");
 			Thread.sleep(2000);
 			WebElement fb_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
-			
-		    fb_pass.sendKeys("redhat2090");
+
+			fb_pass.sendKeys("redhat2090");
 
 		} catch (NoSuchElementException e) {
 
@@ -98,17 +100,15 @@ public class Facebook_existing_paid_login extends BaseClass {
 	@Then("user clicks on Login buttoni$")
 	public void user_clicks_on_Login_buttoni() throws Throwable {
 
-		
 		try {
 			if (!driver.findElements(By.xpath("//input[@value='Log In']")).isEmpty()) {
 				driver.findElement(By.xpath("//input[@value='Log In']")).click();
-			}
-			else {	
-			WebElement fb_login = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
-			
-			
-			fb_login.click();
-			Thread.sleep(3000);
+			} else {
+				WebElement fb_login = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
+
+				fb_login.click();
+				Thread.sleep(3000);
 			}
 			Thread.sleep(2000);
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
@@ -125,13 +125,13 @@ public class Facebook_existing_paid_login extends BaseClass {
 
 	@Then("user downloads the PPTi$")
 	public void user_downloads_the_ppti() throws Throwable {
-	
-		//driver.get("https://www.slideteam.net/business-process-evaluation-powerpoint-show.html");
+
+		// driver.get("https://www.slideteam.net/business-process-evaluation-powerpoint-show.html");
 		Thread.sleep(5000);
 		WebElement download_Ppt = BaseClass.elementToBeClickable(By.xpath("//button[@id='clicking']"));
 		js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 		download_Ppt.click();
-		
+
 		if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
 			WebElement close_popup = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='mfp-close roundlink']")));
@@ -159,11 +159,10 @@ public class Facebook_existing_paid_login extends BaseClass {
 		String verifySignOutMessage = BaseClass.elementToBeClickable(By.xpath("//h3[@class='base']")).getText();
 
 		System.out.print("logout= " + verifySignOutMessage);
-		
+
 		Assert.assertTrue("user is not logout from the application",
 				verifySignOutMessage.contains(verifySignOutMessage));
-		
-		
+
 	}
 
 }
