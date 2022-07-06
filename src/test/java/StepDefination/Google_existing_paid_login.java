@@ -1,5 +1,6 @@
 package StepDefination;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -97,20 +98,14 @@ public class Google_existing_paid_login extends BaseClass {
 			WebElement next_2 = driver.findElement(By.cssSelector("#passwordNext > div > button > span"));
 
 			next_2.click();
-			Thread.sleep(4000);
+			Thread.sleep(5000);
 
-			WebElement download_Ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
-			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
-			download_Ppt.click();
-			Thread.sleep(3000);
 			// if seesion problem
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
-				WebElement approve = wait
-						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
-				approve.click();
+				List<WebElement> approve = driver.findElements(By.xpath("//input[@id='confirm-approve']"));
+				approve.get(0).click();
 
-				Thread.sleep(4000);
+				Thread.sleep(5000);
 				WebElement popular_Ppts = wait
 						.until(ExpectedConditions.elementToBeClickable(By.linkText("Popular PPTs")));
 				popular_Ppts.click();
@@ -120,12 +115,6 @@ public class Google_existing_paid_login extends BaseClass {
 							.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
 					js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 					select_Ppt.click();
-
-					WebElement download_Ppt1 = wait
-							.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
-					js.executeScript("arguments[0].scrollIntoView();", download_Ppt1);
-					download_Ppt.click();
-					Thread.sleep(5000);
 				} catch (NoSuchElementException e) {
 
 				}
@@ -138,15 +127,15 @@ public class Google_existing_paid_login extends BaseClass {
 
 	@Then("user downloads the PPTiii$")
 	public void user_downloads_the_pptiii() throws InterruptedException {
-		/*
-		 * Thread.sleep(9000);
-		 * 
-		 * WebElement download_Ppt = wait
-		 * .until(ExpectedConditions.elementToBeClickable(By.xpath(
-		 * "//button[@id='clicking']")));
-		 * js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
-		 * download_Ppt.click(); Thread.sleep(3000);
-		 */
+
+		Thread.sleep(9000);
+
+		WebElement download_Ppt = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
+		js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
+		download_Ppt.click();
+		Thread.sleep(3000);
+
 	}
 
 	@Then("user clicks on the Logout pageiii$")

@@ -108,22 +108,6 @@ public class Google_free_login extends BaseClass {
 			next_2.click();
 			Thread.sleep(4000);
 
-			try {
-				WebElement download_ppt = wait
-						.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
-				js.executeScript("arguments[0].scrollIntoView();", download_ppt);
-				download_ppt.click();
-				Thread.sleep(2000);
-				if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
-					WebElement close_popup = wait.until(
-							ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='mfp-close roundlink']")));
-
-					close_popup.click();
-				}
-			} catch (NoSuchElementException e) {
-
-			}
-
 			// if session expire problem
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
@@ -150,17 +134,7 @@ public class Google_free_login extends BaseClass {
 				Thread.sleep(2000);
 				js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 				select_ppt.click();
-				WebElement download_ppt = wait
-						.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
-				js.executeScript("arguments[0].scrollIntoView();", download_ppt);
-				download_ppt.click();
-				Thread.sleep(5000);
-				if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
-					WebElement close_popup = wait.until(
-							ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='mfp-close roundlink']")));
 
-					close_popup.click();
-				}
 			} catch (NoSuchElementException e) {
 
 			}
@@ -172,21 +146,23 @@ public class Google_free_login extends BaseClass {
 
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {
-		/*
-		 * try { WebElement download_ppt = wait
-		 * .until(ExpectedConditions.elementToBeClickable(By.xpath(
-		 * "//button[@id='clicking']")));
-		 * js.executeScript("arguments[0].scrollIntoView();", download_ppt);
-		 * download_ppt.click(); Thread.sleep(2000); if
-		 * (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty(
-		 * )) { WebElement close_popup = wait
-		 * .until(ExpectedConditions.elementToBeClickable(By.
-		 * xpath("//a[@class='mfp-close roundlink']")));
-		 * 
-		 * close_popup.click(); } } catch (NoSuchElementException e) {
-		 * 
-		 * }
-		 */
+
+		try {
+			WebElement download_ppt = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
+			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
+			download_ppt.click();
+			Thread.sleep(2000);
+			if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
+				WebElement close_popup = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='mfp-close roundlink']")));
+
+				close_popup.click();
+			}
+		} catch (NoSuchElementException e) {
+
+		}
+
 	}
 
 	@Then("user clicks on the Logout pageiiv$")
