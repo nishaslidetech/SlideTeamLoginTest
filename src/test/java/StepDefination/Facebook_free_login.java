@@ -92,7 +92,7 @@ public class Facebook_free_login extends BaseClass {
 
 			fb_email.clear();
 
-			fb_email.sendKeys("ritapahwa08@gmail.com");
+			fb_email.sendKeys("slidetech.qa.tester@gmail.com");
 
 			WebElement fb_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
 
