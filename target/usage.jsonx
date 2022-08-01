@@ -1,124 +1,16 @@
 [
   {
-    "source": "User is home pagei$",
-    "steps": [
-      {
-        "name": "User is home pagei",
-        "aggregatedDurations": {
-          "median": 18.6364009,
-          "average": 18.6364009
-        },
-        "durations": [
-          {
-            "duration": 18.6364009,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_existing_paid_login.feature:5"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user clicks on the Popular PPTsi$",
-    "steps": [
-      {
-        "name": "user clicks on the Popular PPTsi",
-        "aggregatedDurations": {
-          "median": 0.683706,
-          "average": 0.683706
-        },
-        "durations": [
-          {
-            "duration": 0.683706,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_existing_paid_login.feature:6"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "User try to Download the ppti$",
-    "steps": [
-      {
-        "name": "User try to Download the ppti",
-        "aggregatedDurations": {
-          "median": 20.751889,
-          "average": 20.751889
-        },
-        "durations": [
-          {
-            "duration": 20.751889,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_existing_paid_login.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user is on Login pagei$",
-    "steps": [
-      {
-        "name": "user is on Login pagei",
-        "aggregatedDurations": {
-          "median": 0.0010308,
-          "average": 0.0010308
-        },
-        "durations": [
-          {
-            "duration": 0.0010308,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_existing_paid_login.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user Enters the username and passwordi$",
-    "steps": [
-      {
-        "name": "user Enters the username and passwordi",
-        "aggregatedDurations": {
-          "median": 4.219591,
-          "average": 4.219591
-        },
-        "durations": [
-          {
-            "duration": 4.219591,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_existing_paid_login.feature:9"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user clicks on Login buttoni$",
-    "steps": [
-      {
-        "name": "user clicks on Login buttoni",
-        "aggregatedDurations": {
-          "median": 12.9178964,
-          "average": 12.9178964
-        },
-        "durations": [
-          {
-            "duration": 12.9178964,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_existing_paid_login.feature:10"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "source": "User is home page_ii",
     "steps": [
       {
         "name": "User is home page_ii",
         "aggregatedDurations": {
-          "median": 30.8008203,
-          "average": 30.8008203
+          "median": 17.6288868,
+          "average": 17.6288868
         },
         "durations": [
           {
-            "duration": 30.8008203,
+            "duration": 17.6288868,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:5"
           }
         ]
@@ -131,12 +23,12 @@
       {
         "name": "user click on the Free PPts under free stuff_ii",
         "aggregatedDurations": {
-          "median": 6.0051941,
-          "average": 6.0051941
+          "median": 6.2830242,
+          "average": 6.2830242
         },
         "durations": [
           {
-            "duration": 6.0051941,
+            "duration": 6.2830242,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:6"
           }
         ]
@@ -149,12 +41,12 @@
       {
         "name": "User try to download the free ppts_ii",
         "aggregatedDurations": {
-          "median": 5.5272332,
-          "average": 5.5272332
+          "median": 5.0334361,
+          "average": 5.0334361
         },
         "durations": [
           {
-            "duration": 5.5272332,
+            "duration": 5.0334361,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:7"
           }
         ]
@@ -167,12 +59,12 @@
       {
         "name": "user is on home page page and click on facebbook button_ii",
         "aggregatedDurations": {
-          "median": 7.8834421,
-          "average": 7.8834421
+          "median": 13.7619659,
+          "average": 13.7619659
         },
         "durations": [
           {
-            "duration": 7.8834421,
+            "duration": 13.7619659,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:8"
           }
         ]
@@ -185,12 +77,12 @@
       {
         "name": "user enters the free username and password_ii",
         "aggregatedDurations": {
-          "median": 3.2149853,
-          "average": 3.2149853
+          "median": 3.1999593,
+          "average": 3.1999593
         },
         "durations": [
           {
-            "duration": 3.2149853,
+            "duration": 3.1999593,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:9"
           }
         ]
@@ -203,12 +95,12 @@
       {
         "name": "user clicks on Login button_ii",
         "aggregatedDurations": {
-          "median": 14.5154644,
-          "average": 14.5154644
+          "median": 11.9823604,
+          "average": 11.9823604
         },
         "durations": [
           {
-            "duration": 14.5154644,
+            "duration": 11.9823604,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:10"
           }
         ]
@@ -221,12 +113,12 @@
       {
         "name": "user downloads the free PPT_ii",
         "aggregatedDurations": {
-          "median": 15.4104301,
-          "average": 15.4104301
+          "median": 11.1896192,
+          "average": 11.1896192
         },
         "durations": [
           {
-            "duration": 15.4104301,
+            "duration": 11.1896192,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:11"
           }
         ]
@@ -239,12 +131,12 @@
       {
         "name": "user clicks on the logout page_ii",
         "aggregatedDurations": {
-          "median": 3.7212856,
-          "average": 3.7212856
+          "median": 3.8063248,
+          "average": 3.8063248
         },
         "durations": [
           {
-            "duration": 3.7212856,
+            "duration": 3.8063248,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:12"
           }
         ]
@@ -257,121 +149,13 @@
       {
         "name": "verify The Message_ii",
         "aggregatedDurations": {
-          "median": 3.0622034,
-          "average": 3.0622034
+          "median": 3.0611449,
+          "average": 3.0611449
         },
         "durations": [
           {
-            "duration": 3.0622034,
+            "duration": 3.0611449,
             "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_free_login.feature:13"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "Enter the url",
-    "steps": [
-      {
-        "name": "Enter the url",
-        "aggregatedDurations": {
-          "median": 28.6276849,
-          "average": 28.6276849
-        },
-        "durations": [
-          {
-            "duration": 28.6276849,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_paid_Login.feature:6"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user enters the Username and passwordiv",
-    "steps": [
-      {
-        "name": "user enters the Username and passwordiv",
-        "aggregatedDurations": {
-          "median": 6.2360447,
-          "average": 6.2360447
-        },
-        "durations": [
-          {
-            "duration": 6.2360447,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Facebook_paid_Login.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "User is home pageiii$",
-    "steps": [
-      {
-        "name": "User is home pageiii",
-        "aggregatedDurations": {
-          "median": 21.3431933,
-          "average": 21.3431933
-        },
-        "durations": [
-          {
-            "duration": 21.3431933,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_existing_paid_login.feature:5"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user click on the Popular PPTsiii$",
-    "steps": [
-      {
-        "name": "user click on the Popular PPTsiii",
-        "aggregatedDurations": {
-          "median": 0.5542861,
-          "average": 0.5542861
-        },
-        "durations": [
-          {
-            "duration": 0.5542861,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_existing_paid_login.feature:6"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "User try to download the pptiii$",
-    "steps": [
-      {
-        "name": "User try to download the pptiii",
-        "aggregatedDurations": {
-          "median": 7.0308871,
-          "average": 7.0308871
-        },
-        "durations": [
-          {
-            "duration": 7.0308871,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_existing_paid_login.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user is on Login page and click on Signin with google buttoniii$",
-    "steps": [
-      {
-        "name": "user is on Login page and click on Signin with google buttoniii",
-        "aggregatedDurations": {
-          "median": 9.0616444,
-          "average": 9.0616444
-        },
-        "durations": [
-          {
-            "duration": 9.0616444,
-            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_existing_paid_login.feature:8"
           }
         ]
       }

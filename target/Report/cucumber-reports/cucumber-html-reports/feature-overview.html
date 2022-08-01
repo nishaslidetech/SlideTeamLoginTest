@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                21,
-                8,
-                42,
+                9,
+                0,
+                0,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 71) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -108,7 +108,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                 1,
-                8
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -158,7 +158,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                    1,
-                   8
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>01 Aug 2022, 17:20</td>
+                        <td>01 Aug 2022, 17:42</td>
           </tr>
         </tbody>
       </table>
@@ -323,51 +323,6 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="file-src-test-java-Features-Google_existing_paid_login-feature.html">Login with Google existing paid account test</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-        <td class="duration" data-value="72504536100">1m 12s 504ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-java-Features-Google_free_login-feature.html">Login with Google free account test</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-        <td class="duration" data-value="2017136000">2s 017ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-java-Features-Facebook_existing_paid_login-feature.html">Login with existing facebook paid account test</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td      class="passed"    >6</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-        <td class="duration" data-value="74970525500">1m 14s 970ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
         <td class="tagname"><a href="file-src-test-java-Features-Facebook_free_login-feature.html">Login with facebook free account test</a></td>
         
         <td  class="passed"    >1</td>
@@ -379,114 +334,39 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">9</td>
-        <td class="duration" data-value="90141058500">1m 30s 141ms</td>
+        <td class="duration" data-value="75946721600">1m 15s 946ms</td>
         <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-java-Features-Facebook_paid_Login-feature.html">Login with facebook paid account test</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td      class="passed"    >2</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-        <td class="duration" data-value="80285031600">1m 20s 285ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-java-Features-Google_paid_Login-feature.html">Login with google paid account test</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-        <td class="duration" data-value="2014979300">2s 014ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-java-Features-Normal_paid_login-feature.html">Login with normal paid account test</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >8</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-        <td class="duration" data-value="5001600">005ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-java-Features-SLI_search_google_paid_login-feature.html">SLI search Google login</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >8</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-        <td class="duration" data-value="2012614600">2s 012ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-java-Features-SLI_search_facebook_paid_login-feature.html">SLI search facebook login</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-        <td class="duration" data-value="2013034700">2s 013ms</td>
-        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>9</td>
+      <td>1</td>
             <td>1</td>
-      <td>8</td>
+      <td>0</td>
+      <td>1</td>
       <td>9</td>
-      <td>21</td>
-      <td>8</td>
-      <td>42</td>
       <td>0</td>
       <td>0</td>
-      <td>71</td>
-      <td class="duration">5m 25s 963ms</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td class="duration">1m 15s 946ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>11.11%</td>
-      <td>88.89%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td>29.58%</td>
-      <td>11.27%</td>
-      <td>59.15%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>88.89%</td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>
