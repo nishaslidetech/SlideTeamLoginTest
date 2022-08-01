@@ -31,15 +31,17 @@ public class Google_free_login extends BaseClass {
 	}
 
 	@Then("user click on the Free PPts under free stuffiiv$")
-	public void user_click_on_the_free_p_pts_under_free_stuffiiv() {
+	public void user_click_on_the_free_p_pts_under_free_stuffiiv() throws InterruptedException {
 		try {
 			WebElement free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
 			Actions action = new Actions(driver);
+			Thread.sleep(2000);
 			action.moveToElement(free_Stuff).perform();
 			WebElement free_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
 			action.moveToElement(free_ppt).click().perform();
+			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
 		}

@@ -30,15 +30,17 @@ public class Facebook_free_login extends BaseClass {
 	}
 
 	@Then("user click on the Free PPts under free stuff_ii")
-	public void user_click_on_the_free_ppts_under_free_stuff_ii() {
+	public void user_click_on_the_free_ppts_under_free_stuff_ii() throws InterruptedException {
 		try {
 			WebElement free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
 			Actions action = new Actions(driver);
 			action.moveToElement(free_Stuff).perform();
+			Thread.sleep(2000);
 			WebElement free_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
 			action.moveToElement(free_ppt).click().perform();
+			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 
 		}

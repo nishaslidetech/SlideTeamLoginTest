@@ -115,6 +115,7 @@ public class Google_existing_paid_login extends BaseClass {
 							.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
 					js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 					select_Ppt.click();
+					Thread.sleep(5000);
 				} catch (NoSuchElementException e) {
 
 				}
@@ -128,8 +129,12 @@ public class Google_existing_paid_login extends BaseClass {
 	@Then("user downloads the PPTiii$")
 	public void user_downloads_the_pptiii() throws InterruptedException {
 
-		Thread.sleep(9000);
-
+		
+		WebElement select_Ppt = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
+		js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
+		select_Ppt.click();
+		Thread.sleep(3000);
 		WebElement download_Ppt = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
 		js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
