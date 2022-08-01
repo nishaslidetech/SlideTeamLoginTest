@@ -118,7 +118,7 @@ public class Facebook_free_login extends BaseClass {
 				fb_login.click();
 				Thread.sleep(3000);
 			}
-			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
+			if (!driver.findElements(By.xpath("//div[@id ='confirm_id']")).isEmpty()) {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();

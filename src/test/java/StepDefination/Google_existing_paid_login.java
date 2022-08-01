@@ -102,7 +102,7 @@ public class Google_existing_paid_login extends BaseClass {
 
 			// if seesion problem
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
-				List<WebElement> approve = driver.findElements(By.xpath("//input[@id='confirm-approve']"));
+				List<WebElement> approve = driver.findElements(By.xpath("//div[@id ='confirm_id']"));
 				approve.get(0).click();
 
 				Thread.sleep(5000);
@@ -129,6 +129,10 @@ public class Google_existing_paid_login extends BaseClass {
 	@Then("user downloads the PPTiii$")
 	public void user_downloads_the_pptiii() throws InterruptedException {
 
+		Thread.sleep(5000);
+		WebElement popular_Ppts = wait
+				.until(ExpectedConditions.elementToBeClickable(By.linkText("Popular PPTs")));
+		popular_Ppts.click();
 		
 		WebElement select_Ppt = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));

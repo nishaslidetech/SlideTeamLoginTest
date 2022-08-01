@@ -28,6 +28,7 @@ public class Google_free_login extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		BaseClass.ClearBrowserCache();
+		Thread.sleep(2000);
 	}
 
 	@Then("user click on the Free PPts under free stuffiiv$")

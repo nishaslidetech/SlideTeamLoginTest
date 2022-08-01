@@ -69,7 +69,7 @@ public class Google_Paid_Login extends BaseClass {
 			Thread.sleep(2000);
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
-						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id ='confirm_id']")));
 				approve.click();
 				Thread.sleep(5000);
 			}

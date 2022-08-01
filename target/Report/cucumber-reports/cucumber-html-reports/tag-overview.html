@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@Google_Free_login"],
+        labels: ["@Google_Free_login","@Google_existing_paid_login","@Google_paid_login","@Normal_paid_Login","@SLI_Search_with_Google_Paid","@SLI_Search_with_facebook_Paid","@facebook_Free_login","@facebook_existing_paid_login","@facebook_paid_login"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [0.00]
+                data: [0.00, 50.00, 0.00, 0.00, 0.00, 0.00, 100.00, 66.67, 40.00]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [12.50]
+                data: [12.50, 12.50, 16.67, 11.11, 11.11, 12.50, 0.00, 11.11, 20.00]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [87.50]
+                data: [87.50, 37.50, 83.33, 88.89, 88.89, 87.50, 0.00, 22.22, 40.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>13 Jul 2022, 12:59</td>
+                        <td>01 Aug 2022, 17:20</td>
           </tr>
         </tbody>
       </table>
@@ -203,39 +203,159 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">8</td>
-        <td class="duration" data-value="2039459600">2s 039ms</td>
+        <td class="duration" data-value="2017136000">2s 017ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Google_existing_paid_login.html">@Google_existing_paid_login</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >4</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+        <td class="duration" data-value="72504536100">1m 12s 504ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Google_paid_login.html">@Google_paid_login</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >5</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">6</td>
+        <td class="duration" data-value="2014979300">2s 014ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Normal_paid_Login.html">@Normal_paid_Login</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="5001600">005ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="SLI_Search_with_Google_Paid.html">@SLI_Search_with_Google_Paid</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="2012614600">2s 012ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="SLI_Search_with_facebook_Paid.html">@SLI_Search_with_facebook_Paid</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+        <td class="duration" data-value="2013034700">2s 013ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="facebook_Free_login.html">@facebook_Free_login</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >9</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="90141058500">1m 30s 141ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="facebook_existing_paid_login.html">@facebook_existing_paid_login</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="74970525500">1m 14s 970ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="facebook_paid_login.html">@facebook_paid_login</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >2</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+        <td class="duration" data-value="80285031600">1m 20s 285ms</td>
         <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>1</td>
-            <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>7</td>
-      <td>0</td>
-      <td>0</td>
+      <td>9</td>
+            <td>1</td>
       <td>8</td>
-      <td class="duration">2s 039ms</td>
+      <td>9</td>
+      <td>21</td>
+      <td>8</td>
+      <td>42</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71</td>
+      <td class="duration">5m 25s 963ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>0.00%</td>
-      <td>100.00%</td>
+            <td>11.11%</td>
+      <td>88.89%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>12.50%</td>
-      <td>87.50%</td>
+      <td>29.58%</td>
+      <td>11.27%</td>
+      <td>59.15%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>88.89%</td>
     </tr>
   </tfoot>
 </table>
