@@ -37,8 +37,9 @@ public class Google_free_login extends BaseClass {
 			WebElement free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
 			Actions action = new Actions(driver);
-			Thread.sleep(2000);
+		
 			action.moveToElement(free_Stuff).perform();
+			Thread.sleep(2000);
 			WebElement free_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
 			action.moveToElement(free_ppt).click().perform();
@@ -123,6 +124,7 @@ public class Google_free_login extends BaseClass {
 						By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
 				Actions action = new Actions(driver);
 				action.moveToElement(free_Stuff).perform();
+				Thread.sleep(2000);
 				WebElement free_ppt = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
 				action.moveToElement(free_ppt).click().perform();

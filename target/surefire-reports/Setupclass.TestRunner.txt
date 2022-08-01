@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: Setupclass.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 83.366 s - in Setupclass.TestRunner
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 65.939 s <<< FAILURE! - in Setupclass.TestRunner
+Login with Google free account test.Login with Google free account  Time elapsed: 58.53 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates'] (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9c17b22ff768f556703036af7ae40c6
+*** Element info: {Using=xpath, value=//img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates']}
+
