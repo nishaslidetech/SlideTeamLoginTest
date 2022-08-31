@@ -1,0 +1,74 @@
+[
+  {
+    "source": "User is home pageiiv$",
+    "steps": [
+      {
+        "name": "User is home pageiiv",
+        "aggregatedDurations": {
+          "median": 22.5454515,
+          "average": 22.5454515
+        },
+        "durations": [
+          {
+            "duration": 22.5454515,
+            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_free_login.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user click on the Free PPts under free stuffiiv$",
+    "steps": [
+      {
+        "name": "user click on the Free PPts under free stuffiiv",
+        "aggregatedDurations": {
+          "median": 5.2077141,
+          "average": 5.2077141
+        },
+        "durations": [
+          {
+            "duration": 5.2077141,
+            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_free_login.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User try to download the free pptsiiv$",
+    "steps": [
+      {
+        "name": "User try to download the free pptsiiv",
+        "aggregatedDurations": {
+          "median": 10.7523689,
+          "average": 10.7523689
+        },
+        "durations": [
+          {
+            "duration": 10.7523689,
+            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_free_login.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user is on home page page and click on google buttoniiv$",
+    "steps": [
+      {
+        "name": "user is on home page page and click on google buttoniiv",
+        "aggregatedDurations": {
+          "median": 6.6207145,
+          "average": 6.6207145
+        },
+        "durations": [
+          {
+            "duration": 6.6207145,
+            "location": "file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_free_login.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]

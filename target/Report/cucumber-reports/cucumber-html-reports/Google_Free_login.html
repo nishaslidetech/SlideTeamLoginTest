@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>01 Aug 2022, 18:03</td>
+                        <td>01 Aug 2022, 18:05</td>
           </tr>
         </tbody>
       </table>
@@ -126,13 +126,13 @@ $(document).ready(function() {
                     <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >2</td>
+          <td      class="passed"    >4</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >5</td>
+          <td     class="skipped"   >3</td>
           <td >0</td>
           <td >0</td>
           <td class="total">8</td>
-          <td class="duration" data-value="57950503700">57s 950ms</td>
+          <td class="duration" data-value="96943999600">1m 36s 943ms</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -199,7 +199,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User is home pageiiv</span>
   
-  <span class="lead-duration duration">22s 260ms</span>
+  <span class="lead-duration duration">22s 545ms</span>
 
   </div>
 
@@ -220,7 +220,49 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user click on the Free PPts under free stuffiiv</span>
   
-  <span class="lead-duration duration">2s 396ms</span>
+  <span class="lead-duration duration">5s 207ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User try to download the free pptsiiv</span>
+  
+  <span class="lead-duration duration">10s 752ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user is on home page page and click on google buttoniiv</span>
+  
+  <span class="lead-duration duration">6s 620ms</span>
 
   </div>
 
@@ -238,10 +280,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">User try to download the free pptsiiv</span>
+  <span class="keyword indention">And</span>
+  <span class="name">user Enters the free username and passwordiiv</span>
   
-  <span class="lead-duration duration">33s 292ms</span>
+  <span class="lead-duration duration">51s 816ms</span>
 
   </div>
 
@@ -253,20 +295,20 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates'] (tried for 30 second(s) with 500 milliseconds interval)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff'] (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at StepDefination.Google_free_login.user_try_to_download_the_free_pptsiiv(Google_free_login.java:57)
-	at ✽.User try to download the free pptsiiv(file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_free_login.feature:7)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates']"}
+	at StepDefination.Google_free_login.user_Enters_the_free_username_and_passwordiiv(Google_free_login.java:123)
+	at ✽.user Enters the free username and passwordiiv(file:///D:/Selenium%20Live%20Projects/SlideTeamLoginTest/./src/test/java/Features/Google_free_login.feature:9)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']"}
   (Session info: chrome=103.0.5060.134)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d9c17b22ff768f556703036af7ae40c6
-*** Element info: {Using=xpath, value=//img[@title='Diverging process arrow chart 4 steps cycle diagram free powerpoint templates']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e90b6be9f011c7b749755989e95167f
+*** Element info: {Using=xpath, value=//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -287,7 +329,7 @@ Session ID: d9c17b22ff768f556703036af7ae40c6
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at StepDefination.Google_free_login.user_try_to_download_the_free_pptsiiv(Google_free_login.java:57)
+	at StepDefination.Google_free_login.user_Enters_the_free_username_and_passwordiiv(Google_free_login.java:123)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -350,51 +392,9 @@ Session ID: d9c17b22ff768f556703036af7ae40c6
         
 <div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">user is on home page page and click on google buttoniiv</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user Enters the free username and passwordiiv</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
   <span class="name">user downloads the free PPTiiv</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">001ms</span>
 
   </div>
 
@@ -475,7 +475,7 @@ Session ID: d9c17b22ff768f556703036af7ae40c6
             <span class="keyword indention">After</span>
                           <span class="location name">StepDefination.TakeImageStep.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">310ms</span>
+  <span class="lead-duration duration">137ms</span>
 
           </div>
 
@@ -485,12 +485,12 @@ Session ID: d9c17b22ff768f556703036af7ae40c6
           
   <div class="embeddings inner-level">
                 <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_360721981" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-912831783" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_360721981.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+      <a href="embeddings/embedding_-912831783.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
     </div>
-    <div id="embedding_embedding_360721981" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_360721981.png"></span>
+    <div id="embedding_embedding_-912831783" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-912831783.png"></span>
     </div>
   </div>
         </div>
