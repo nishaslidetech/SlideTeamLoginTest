@@ -93,6 +93,8 @@ public class Facebook_Paid_Login extends BaseClass {
 	@Then("user downloads the popular PPTiv")
 	public void user_downloads_the_popular_ppiv() throws InterruptedException {
 		System.out.println("user will download the ppt");
+		driver.navigate().refresh();
+		
 		Thread.sleep(4000);
 
 		WebElement popular_PPt = wait

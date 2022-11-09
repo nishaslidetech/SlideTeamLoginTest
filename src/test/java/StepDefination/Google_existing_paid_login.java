@@ -128,6 +128,7 @@ public class Google_existing_paid_login extends BaseClass {
 
 	@Then("user downloads the PPTiii$")
 	public void user_downloads_the_pptiii() throws InterruptedException {
+		driver.navigate().refresh();
 
 		Thread.sleep(5000);
 		WebElement popular_Ppts = wait

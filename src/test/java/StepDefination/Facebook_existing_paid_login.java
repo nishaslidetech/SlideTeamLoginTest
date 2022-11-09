@@ -115,6 +115,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
+				Thread.sleep(2000);
 			}
 		} catch (NoSuchElementException e) {
 			// TODO Auto-generated catch block
@@ -126,7 +127,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 	@Then("user downloads the PPTi$")
 	public void user_downloads_the_ppti() throws Throwable {
 
-		// driver.get("https://www.slideteam.net/business-process-evaluation-powerpoint-show.html");
+		driver.navigate().refresh();
 		Thread.sleep(5000);
 		WebElement download_Ppt = BaseClass.elementToBeClickable(By.xpath("//button[@id='clicking']"));
 		js.executeScript("arguments[0].scrollIntoView();", download_Ppt);

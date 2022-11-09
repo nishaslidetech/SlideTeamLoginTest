@@ -134,7 +134,8 @@ public class Facebook_free_login extends BaseClass {
 	public void user_downloads_the_free_ppt_ii() throws InterruptedException {
 		try {
 			Thread.sleep(2000);
-			// driver.get("https://www.slideteam.net/3d-man-education-and-technology-concept-ppt-graphics-icons.html");
+			driver.navigate().refresh();
+			Thread.sleep(3000);
 			WebElement download_ppt = BaseClass.elementToBeClickable(By.xpath("//button[@id='clicking']"));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
 			download_ppt.click();
@@ -161,27 +162,27 @@ public class Facebook_free_login extends BaseClass {
 
 	@Then("user clicks on the logout page_ii")
 	public void user_clicks_on_the_logout_page_ii() throws Throwable {
-		/*
-		 * try { Thread.sleep(2000); WebElement sign_Out =
-		 * wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign Out")));
-		 * js.executeScript("arguments[0].click();", sign_Out); } catch
-		 * (NoSuchElementException e) {
-		 * 
-		 * }
-		 */
+
+		try {
+			Thread.sleep(2000);
+			WebElement sign_Out = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign Out")));
+			js.executeScript("arguments[0].click();", sign_Out);
+		} catch (NoSuchElementException e) {
+
+		}
+
 	}
 
 	@Then("verify The Message_ii")
 	public void verify_The_Message_ii() throws InterruptedException {
-		/*
-		 * Thread.sleep(3000); String verifySignOutMessage =
-		 * BaseClass.elementToBeClickable(By.xpath("//h3[@class='base']")).getText();
-		 * 
-		 * System.out.print("logout= " + verifySignOutMessage);
-		 * 
-		 * Assert.assertTrue("user is not logout from the application",
-		 * verifySignOutMessage.contains(verifySignOutMessage));
-		 */
+
+		Thread.sleep(3000);
+		String verifySignOutMessage = BaseClass.elementToBeClickable(By.xpath("//h3[@class='base']")).getText();
+
+		System.out.print("logout= " + verifySignOutMessage);
+
+		Assert.assertTrue("user is not logout from the application",
+				verifySignOutMessage.contains(verifySignOutMessage));
 
 	}
 

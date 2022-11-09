@@ -99,7 +99,8 @@ public class Google_Paid_Login extends BaseClass {
 	public void user_downloads_the_ppt_v() throws InterruptedException {
 
 		Thread.sleep(3000);
-
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		WebElement popular_PPt = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Most Downloaded']")));
 		popular_PPt.click();

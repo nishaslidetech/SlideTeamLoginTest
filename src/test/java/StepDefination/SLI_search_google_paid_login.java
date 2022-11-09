@@ -116,6 +116,8 @@ public class SLI_search_google_paid_login extends BaseClass {
 
 	@Then("enter Keyword in search field_viii$")
 	public void enter_Keyword_in_search_field_viii() throws Throwable {
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		Thread.sleep(4000);
 		WebElement search_field = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));

@@ -76,6 +76,8 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']")))
 				.getText();
 		System.out.println("subscriptionText = " + subscriptionText);
@@ -110,6 +112,8 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 
 	@Then("user clicks on the Logout page_vii$")
 	public void user_clicks_on_the_logout_page_vii() {
+		driver.navigate().refresh();
+
 		try {
 
 			WebElement sign_Out = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign Out")));

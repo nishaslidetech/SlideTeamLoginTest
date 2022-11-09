@@ -118,6 +118,8 @@ public class Google_free_login extends BaseClass {
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
 			}
+			Thread.sleep(3000);
+			driver.navigate().refresh();
 			Thread.sleep(5000);
 			try {
 				WebElement free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
