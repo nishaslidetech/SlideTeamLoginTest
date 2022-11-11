@@ -67,10 +67,12 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 
 			}
 			Thread.sleep(2000);
-			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
+			if (!driver.findElements(By.xpath("//div[@class=' login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
-						.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id ='confirm_id']")));
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
+				Thread.sleep(3000);
 				approve.click();
+				
 			}
 		} catch (NoSuchElementException e) {
 			// TODO Auto-generated catch block

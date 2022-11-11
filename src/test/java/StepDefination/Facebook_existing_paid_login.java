@@ -111,11 +111,12 @@ public class Facebook_existing_paid_login extends BaseClass {
 				Thread.sleep(3000);
 			}
 			Thread.sleep(2000);
-			if (!driver.findElements(By.xpath("//div[@id ='confirm_id']")).isEmpty()) {
+			if (!driver.findElements(By.xpath("//div[@class=' login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
+				Thread.sleep(3000);
 				approve.click();
-				Thread.sleep(2000);
+				
 			}
 		} catch (NoSuchElementException e) {
 			// TODO Auto-generated catch block

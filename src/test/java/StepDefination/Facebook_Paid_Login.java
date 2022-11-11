@@ -74,10 +74,12 @@ public class Facebook_Paid_Login extends BaseClass {
 				fb_login.click();
 				Thread.sleep(3000);
 			}
-			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
+			if (!driver.findElements(By.xpath("//div[@class=' login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
-						.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id ='confirm_id']")));
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
+				Thread.sleep(3000);
 				approve.click();
+
 			}
 		} catch (NoSuchElementException e) {
 			// TODO Auto-generated catch block
@@ -94,7 +96,7 @@ public class Facebook_Paid_Login extends BaseClass {
 	public void user_downloads_the_popular_ppiv() throws InterruptedException {
 		System.out.println("user will download the ppt");
 		driver.navigate().refresh();
-		
+
 		Thread.sleep(4000);
 
 		WebElement popular_PPt = wait
