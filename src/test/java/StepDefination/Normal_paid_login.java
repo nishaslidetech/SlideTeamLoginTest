@@ -95,7 +95,9 @@ public class Normal_paid_login extends BaseClass {
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				Thread.sleep(3000);
 				approve.click();
-				
+				driver.get(
+						"https://www.slideteam.net/business-puzzle-list-diagarm-free-powerpoint-templates-ppt-presentation-slides-0812.html");
+				Thread.sleep(3000);
 			}
 			Thread.sleep(5000);
 		} catch (NoSuchElementException e) {
@@ -105,9 +107,7 @@ public class Normal_paid_login extends BaseClass {
 
 	@Then("user downloads the PPT_vi$")
 	public void user_downloads_the_ppt_vi() throws Throwable {
-		driver.get(
-				"https://www.slideteam.net/business-puzzle-list-diagarm-free-powerpoint-templates-ppt-presentation-slides-0812.html");
-		Thread.sleep(3000);
+		
 
 		WebElement download_Ppt = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")));
