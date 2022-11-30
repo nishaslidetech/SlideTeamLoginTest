@@ -78,8 +78,7 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.navigate().refresh();
-		Thread.sleep(3000);
+		
 		String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='message success']")))
 				.getText();
 		System.out.println("subscriptionText = " + subscriptionText);
