@@ -147,10 +147,9 @@ public class BaseClass {
 	public static void after_Class() throws InterruptedException {
 		Thread.sleep(2000);
 
-		if (driver != null) {
-			driver.quit(); // ->> don't want to close the browser
-			Thread.sleep(2000);
-		}
+		/*
+		 * if (driver != null) { driver.quit(); Thread.sleep(2000); }
+		 */
 	}
 
 }

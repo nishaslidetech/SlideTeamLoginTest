@@ -80,7 +80,7 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 		}
 		driver.navigate().refresh();
 		Thread.sleep(3000);
-		String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']")))
+		String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='message success']")))
 				.getText();
 		System.out.println("subscriptionText = " + subscriptionText);
 		// Assert.assertTrue("user is not on the subscription page after login with

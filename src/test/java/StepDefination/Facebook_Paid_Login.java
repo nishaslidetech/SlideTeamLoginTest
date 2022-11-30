@@ -86,7 +86,7 @@ public class Facebook_Paid_Login extends BaseClass {
 			e.printStackTrace();
 		}
 
-		String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']")))
+		String subscriptionText = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='message success']")))
 				.getText();
 		System.out.println("subscriptionText = " + subscriptionText);
 
