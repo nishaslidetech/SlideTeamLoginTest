@@ -163,7 +163,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 		System.out.print("logout= " + verifySignOutMessage);
 
 		Assert.assertTrue("user is not logout from the application",
-				verifySignOutMessage.contains(verifySignOutMessage));
+				verifySignOutMessage.contains("YOU ARE NOW LOGGED OUT"));
 
 	}
 

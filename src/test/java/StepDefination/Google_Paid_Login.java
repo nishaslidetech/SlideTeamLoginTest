@@ -137,7 +137,7 @@ public class Google_Paid_Login extends BaseClass {
 		System.out.print("logout= " + verifySignOutMessage);
 
 		Assert.assertTrue("user is not logout from the application",
-				verifySignOutMessage.contains(verifySignOutMessage));
+				verifySignOutMessage.contains("YOU ARE NOW LOGGED OUT"));
 
 	}
 }
